@@ -30,7 +30,7 @@
 }
 
 .listItem:hover {
-  background-color: azure;
+  background-color: rgb(163, 255, 255);
 }
 
 .loadingText,.noDataFound {

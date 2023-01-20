@@ -8,7 +8,7 @@ const AutoComplete = () => {
   const [usersArray, setUsersArray] = useState<string[]>([]);
   const [filterdData, setFilterdData] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [closeDropDown, setCloseDropDown] = useState<boolean>(false);
+  const [closeDropDown, setCloseDropDown] = useState<boolean>(true);
   const [highlightedItemIdx, setHighlightedItemIdx] = useState<number>(-1);
 
   const autoCompleteContainerRef = useRef<HTMLDivElement>(null);
@@ -137,7 +137,7 @@ const AutoComplete = () => {
                   className={classes.listItem}
                   style={{
                     backgroundColor:
-                      highlightedItemIdx === idx ? "cyan" : "white",
+                      highlightedItemIdx === idx ? "cyan" : "",
                   }}
                 >
                   {splitedItem.map((item, idx) =>
