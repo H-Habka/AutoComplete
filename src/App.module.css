@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-block: 50px;
+}
